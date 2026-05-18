@@ -1,0 +1,81 @@
+[Line 15, Col 5] Lexical Error: Invalid character 'i' in number '1i'. Switching to PANIC mode.
+[Line 17, Col 5] Lexical Error: Invalid character '_' in number '1_'. Switching to PANIC mode.
+[Line 18, Col 5] Lexical Error: Invalid character '.' in identifier 'i.'. Switching to PANIC mode.
+[Line 19, Col 5] Lexical Error: Invalid character 'i' in number '1.i'. Switching to PANIC mode.
+[Line 24, Col 7] Lexical Error: Invalid character 'f' in number '1f'. Switching to PANIC mode.
+[Line 26, Col 7] Lexical Error: Invalid character '_' in number '1_'. Switching to PANIC mode.
+[Line 27, Col 7] Lexical Error: Invalid character '.' in identifier 'f.'. Switching to PANIC mode.
+[Line 28, Col 7] Lexical Error: Invalid character 'f' in number '1.f'. Switching to PANIC mode.
+[Line 51, Col 5] Lexical Error: Unknown symbol '_'. Switching to PANIC mode.
+[Line 77, Col 10] Lexical Error: Unknown symbol '''. Switching to PANIC mode.
+[Line 79, Col 10] Lexical Error: Unknown symbol '''. Switching to PANIC mode.
+[Line 80, Col 12] Lexical Error: Unknown symbol '''. Switching to PANIC mode.
+[Line 105, Col 3] Lexical Error: Unknown symbol 'Ð'. Switching to PANIC mode.
+[Line 105, Col 20] Lexical Error: Unknown symbol 'Ð'. Switching to PANIC mode.
+[Line 108, Col 1] Lexical Error: Unclosed comment
+[Line 9, Col 5] Semantic Error: Redeclaration of variable 'z1'
+[Line 10, Col 5] Semantic Error: Redeclaration of variable 'z1'
+[Line 11, Col 5] Semantic Error: Redeclaration of variable 'z3'
+[Line 16, Col 5] Semantic Error: Redeclaration of variable 'i_1'
+[Line 20, Col 5] Semantic Error: Redeclaration of variable 'i'
+[Line 25, Col 7] Semantic Error: Redeclaration of variable 'f_1'
+[Line 29, Col 7] Semantic Error: Redeclaration of variable 'f'
+[Line 34, Col 5] Semantic Error: Redeclaration of variable 'intm'
+[Line 36, Col 5] Semantic Error: Redeclaration of variable 'intm'
+[Line 37, Col 5] Semantic Error: Redeclaration of variable 'intm'
+[Line 40, Col 5] Semantic Error: Redeclaration of variable 'intm'
+[Line 40, Col 10] Semantic Error: Array size must be an integer
+[Line 42, Col 7] Semantic Error: Redeclaration of variable 'intf'
+[Line 44, Col 7] Semantic Error: Redeclaration of variable 'intf'
+[Line 45, Col 7] Semantic Error: Redeclaration of variable 'intf'
+[Line 50, Col 5] Semantic Error: Redeclaration of variable 'PI'
+[Line 52, Col 5] Semantic Error: Redeclaration of variable 'Pi'
+[Line 54, Col 5] Semantic Error: Redeclaration of variable 'MAX_VALUE'
+[Line 57, Col 5] Semantic Error: Redeclaration of variable 'Max_VALUE'
+[Line 60, Col 5] Semantic Error: Redeclaration of variable 'main'
+[Line 66, Col 5] Semantic Error: Redeclaration of variable 'u1'
+[Line 67, Col 5] Semantic Error: Redeclaration of variable 'u1'
+[Line 70, Col 5] Semantic Error: Redeclaration of variable 'q1'
+[Line 71, Col 1] Semantic Error: Redeclaration of variable 'q2'
+[Line 74, Col 5] Semantic Error: Redeclaration of variable 'q3'
+[Line 74, Col 17] Semantic Error: Redeclaration of variable 'q4'
+[Line 77, Col 5] Semantic Error: Redeclaration of variable 's1'
+[Line 78, Col 5] Semantic Error: Redeclaration of variable 's2'
+[Line 79, Col 5] Semantic Error: Redeclaration of variable 's3'
+[Line 80, Col 7] Semantic Error: Redeclaration of variable 's6'
+[Line 81, Col 7] Semantic Error: Redeclaration of variable 's7'
+[Line 85, Col 5] Semantic Error: Redeclaration of variable 'num_i1'
+[Line 86, Col 5] Semantic Error: Redeclaration of variable 'num_i2'
+[Line 87, Col 7] Semantic Error: Redeclaration of variable 'num_f'
+[Line 89, Col 5] Semantic Error: Redeclaration of variable 'plus'
+[Line 90, Col 5] Semantic Error: Redeclaration of variable 'minus'
+[Line 91, Col 5] Semantic Error: Redeclaration of variable 'mult'
+[Line 93, Col 5] Semantic Error: Redeclaration of variable 'plus1'
+[Line 94, Col 5] Semantic Error: Redeclaration of variable 'minus1'
+[Line 95, Col 5] Semantic Error: Redeclaration of variable 'mult1'
+[Line 9, Col 10] Syntax Error: Unexpected token ;
+[Line 11, Col 1] Syntax Error: Unexpected token int
+[Line 11, Col 8] Syntax Error: Unexpected token const
+[Line 15, Col 8] Syntax Error: Unexpected token =
+[Line 17, Col 9] Syntax Error: Unexpected token =
+[Line 18, Col 9] Syntax Error: Unexpected token =
+[Line 19, Col 9] Syntax Error: Unexpected token =
+[Line 20, Col 6] Syntax Error: Unexpected token ,
+[Line 21, Col 5] Syntax Error: Unexpected token const
+[Line 24, Col 10] Syntax Error: Unexpected token =
+[Line 26, Col 11] Syntax Error: Unexpected token =
+[Line 27, Col 11] Syntax Error: Unexpected token =
+[Line 28, Col 11] Syntax Error: Unexpected token =
+[Line 29, Col 8] Syntax Error: Unexpected token ,
+[Line 30, Col 7] Syntax Error: Unexpected token const
+[Line 36, Col 10] Syntax Error: Unexpected token ]
+[Line 44, Col 12] Syntax Error: Unexpected token ]
+[Line 51, Col 9] Syntax Error: Unexpected token =
+[Line 61, Col 5] Syntax Error: Unexpected token int
+[Line 61, Col 9] Syntax Error: Unexpected token =
+[Line 62, Col 5] Syntax Error: Unexpected token float
+[Line 62, Col 11] Syntax Error: Unexpected token =
+[Line 77, Col 13] Syntax Error: Unexpected token ;
+[Line 79, Col 16] Syntax Error: Unexpected token ;
+[Line 80, Col 15] Syntax Error: Unexpected token ;
+[Line 105, Col 1] Syntax Error: Unexpected token !=
