@@ -1,0 +1,35 @@
+# Директории сборки CMake
+build/
+bin/
+out/
+
+# Файлы сборки CMake (на случай сборки прямо в корне)
+CMakeCache.txt
+CMakeFiles/
+CMakefiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+
+# Скомпилированные файлы
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+Lab3
+
+# Выходные файлы запуска программы (если их не нужно отслеживать)
+tokens.txt
+errors.txt
+variables.txt
+
+# Настройки сред разработки (IDE)
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln
+.vs/

@@ -7,6 +7,8 @@
 #include <sstream>
 #include <cctype>
 #include <iterator>
+#include <algorithm>
+#include <climits>
 
 using namespace std;
 
