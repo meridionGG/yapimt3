@@ -1,0 +1,94 @@
+[Line 15, Col 5] Lexical Error: Invalid character 'i' in number '1i'. Switching to PANIC mode.
+[Line 17, Col 5] Lexical Error: Invalid character '_' in number '1_'. Switching to PANIC mode.
+[Line 18, Col 5] Lexical Error: Invalid character '.' in identifier 'i.'. Switching to PANIC mode.
+[Line 19, Col 5] Lexical Error: Invalid character 'i' in number '1.i'. Switching to PANIC mode.
+[Line 24, Col 7] Lexical Error: Invalid character 'f' in number '1f'. Switching to PANIC mode.
+[Line 26, Col 7] Lexical Error: Invalid character '_' in number '1_'. Switching to PANIC mode.
+[Line 27, Col 7] Lexical Error: Invalid character '.' in identifier 'f.'. Switching to PANIC mode.
+[Line 28, Col 7] Lexical Error: Invalid character 'f' in number '1.f'. Switching to PANIC mode.
+[Line 49, Col 1] Lexical Error: Unknown symbol '.'. Switching to PANIC mode.
+[Line 50, Col 1] Lexical Error: Unknown symbol '_'. Switching to PANIC mode.
+[Line 51, Col 1] Lexical Error: Unknown operator '!'
+[Line 52, Col 1] Lexical Error: Unknown symbol '$'. Switching to PANIC mode.
+[Line 55, Col 1] Lexical Error: Unknown symbol '.'. Switching to PANIC mode.
+[Line 56, Col 1] Lexical Error: Unknown symbol '_'. Switching to PANIC mode.
+[Line 57, Col 1] Lexical Error: Unknown operator '!'
+[Line 58, Col 1] Lexical Error: Unknown symbol '$'. Switching to PANIC mode.
+[Line 61, Col 1] Lexical Error: Invalid character '.' in identifier 'int.'. Switching to PANIC mode.
+[Line 62, Col 5] Lexical Error: Unknown symbol '_'. Switching to PANIC mode.
+[Line 63, Col 5] Lexical Error: Unknown operator '!'
+[Line 64, Col 5] Lexical Error: Unknown symbol '$'. Switching to PANIC mode.
+[Line 67, Col 1] Lexical Error: Invalid character '.' in identifier 'int.'. Switching to PANIC mode.
+[Line 68, Col 5] Lexical Error: Unknown symbol '_'. Switching to PANIC mode.
+[Line 69, Col 5] Lexical Error: Unknown operator '!'
+[Line 70, Col 5] Lexical Error: Unknown symbol '$'. Switching to PANIC mode.
+[Line 73, Col 11] Lexical Error: Unknown symbol '.'. Switching to PANIC mode.
+[Line 74, Col 11] Lexical Error: Unknown symbol '_'. Switching to PANIC mode.
+[Line 75, Col 11] Lexical Error: Unknown operator '!'
+[Line 76, Col 11] Lexical Error: Unknown symbol '$'. Switching to PANIC mode.
+[Line 79, Col 11] Lexical Error: Unknown symbol '.'. Switching to PANIC mode.
+[Line 80, Col 11] Lexical Error: Unknown symbol '_'. Switching to PANIC mode.
+[Line 81, Col 11] Lexical Error: Unknown operator '!'
+[Line 82, Col 11] Lexical Error: Unknown symbol '$'. Switching to PANIC mode.
+[Line 107, Col 10] Lexical Error: Unknown symbol '''. Switching to PANIC mode.
+[Line 109, Col 10] Lexical Error: Unknown symbol '''. Switching to PANIC mode.
+[Line 110, Col 12] Lexical Error: Unknown symbol '''. Switching to PANIC mode.
+[Line 139, Col 3] Lexical Error: Unknown symbol 'Ð'. Switching to PANIC mode.
+[Line 139, Col 20] Lexical Error: Unknown symbol 'Ð'. Switching to PANIC mode.
+[Line 9, Col 10] Syntax Error: Unexpected token ;
+[Line 11, Col 1] Syntax Error: Unexpected token int
+[Line 15, Col 8] Syntax Error: Unexpected token =
+[Line 17, Col 9] Syntax Error: Unexpected token =
+[Line 18, Col 9] Syntax Error: Unexpected token =
+[Line 19, Col 9] Syntax Error: Unexpected token =
+[Line 20, Col 6] Syntax Error: Unexpected token ,
+[Line 21, Col 5] Syntax Error: Unexpected token const
+[Line 24, Col 10] Syntax Error: Unexpected token =
+[Line 26, Col 11] Syntax Error: Unexpected token =
+[Line 27, Col 11] Syntax Error: Unexpected token =
+[Line 28, Col 11] Syntax Error: Unexpected token =
+[Line 29, Col 8] Syntax Error: Unexpected token ,
+[Line 30, Col 7] Syntax Error: Unexpected token const
+[Line 33, Col 4] Syntax Error: Unexpected token [
+[Line 34, Col 4] Syntax Error: Unexpected token [
+[Line 35, Col 4] Syntax Error: Unexpected token [
+[Line 36, Col 5] Syntax Error: Unexpected token [
+[Line 37, Col 6] Syntax Error: Unexpected token Unknown
+[Line 39, Col 4] Syntax Error: Unexpected token [
+[Line 41, Col 6] Syntax Error: Unexpected token [
+[Line 42, Col 6] Syntax Error: Unexpected token [
+[Line 43, Col 6] Syntax Error: Unexpected token [
+[Line 44, Col 5] Syntax Error: Unexpected token [
+[Line 45, Col 6] Syntax Error: Unexpected token Unknown
+[Line 49, Col 5] Syntax Error: Unexpected token =
+[Line 50, Col 5] Syntax Error: Unexpected token =
+[Line 52, Col 5] Syntax Error: Unexpected token =
+[Line 55, Col 5] Syntax Error: Unexpected token =
+[Line 56, Col 5] Syntax Error: Unexpected token =
+[Line 58, Col 5] Syntax Error: Unexpected token =
+[Line 61, Col 8] Syntax Error: Unexpected token =
+[Line 62, Col 9] Syntax Error: Unexpected token =
+[Line 64, Col 9] Syntax Error: Unexpected token =
+[Line 67, Col 8] Syntax Error: Unexpected token =
+[Line 68, Col 9] Syntax Error: Unexpected token =
+[Line 70, Col 9] Syntax Error: Unexpected token =
+[Line 72, Col 7] Syntax Error: Unexpected token int
+[Line 73, Col 7] Syntax Error: Unexpected token int
+[Line 74, Col 7] Syntax Error: Unexpected token int
+[Line 75, Col 7] Syntax Error: Unexpected token int
+[Line 76, Col 7] Syntax Error: Unexpected token int
+[Line 78, Col 7] Syntax Error: Unexpected token int
+[Line 79, Col 7] Syntax Error: Unexpected token int
+[Line 80, Col 7] Syntax Error: Unexpected token int
+[Line 81, Col 7] Syntax Error: Unexpected token int
+[Line 82, Col 7] Syntax Error: Unexpected token int
+[Line 91, Col 5] Syntax Error: Unexpected token int
+[Line 92, Col 5] Syntax Error: Unexpected token float
+[Line 107, Col 13] Syntax Error: Unexpected token ;
+[Line 109, Col 16] Syntax Error: Unexpected token ;
+[Line 110, Col 15] Syntax Error: Unexpected token ;
+[Line 113, Col 4] Syntax Error: Unexpected token [
+[Line 114, Col 4] Syntax Error: Unexpected token [
+[Line 115, Col 4] Syntax Error: Unexpected token [
+[Line 116, Col 6] Syntax Error: Unexpected token Unknown
+[Line 139, Col 1] Syntax Error: Unexpected token !=

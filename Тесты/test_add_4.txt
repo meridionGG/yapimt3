@@ -1,0 +1,3 @@
+int wrong;
+wrong = 5 + * 3;
+wrong = 10;

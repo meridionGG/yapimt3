@@ -1,0 +1,5 @@
+/* Correct algorithm */
+int var_res = 0;
+float CURRENT_VAL = 15.5;
+// Compute difference
+var_res = CURRENT_VAL - 5;

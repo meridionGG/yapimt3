@@ -1,0 +1,3 @@
+int flag;
+flag = a < b;
+flag = a == 10;

@@ -1,0 +1,2 @@
+int 123bad_name = 5;
+float valid_name = 10.5;
