@@ -191,6 +191,10 @@ vector<Token> tokenizeFile(const string& filepath, const ConstTable& alphabet, c
     if (state == State::IN_ID || state == State::IN_NUMBER || state == State::IN_OPERATOR) {
         processBuffer();
     }
+    
+    if (state == State::IN_COMMENT && buffer.substr(0, 2) == "/*") {
+        errorsOut << "[Line " << current_line << ", Col " << start_col << "] Lexical Error: Unclosed comment\n";
+    }
 
     if (!tokens.empty()) {
         size_t current_print_line = tokens[0].line;

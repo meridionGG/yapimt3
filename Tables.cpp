@@ -31,7 +31,7 @@ void ConstTable::loadFromFile(const string& filePath) {
 
 VarTable::VarTable(string file, size_t initial_size)
     : table_size(NextPrime(initial_size)), table(table_size), filename(file) {
-    reservedWords.loadFromFile("reserved_words.txt");
+    reservedWords.loadFromFile("config/reserved_words.txt");
 }
 
 size_t VarTable::customHash(const string& key) const {

@@ -30,56 +30,26 @@ float f,1 = 1.1;
 float 1,f = 1.1;
 
 // массивы
-int[] intm = new int[4] { 1, 2, 3, 5 };
-int[] intm = new int[] { 1, 2, 3, 5 };
-int[] intm = { 1, 2, 3, 5 };
+
+int intm[4];
+intm = [ 1, 2, 3, 5 ];
+int intm[];
+int intm;
 intm[3] = intm[3] + 30;
-print(intm);
 
-int[] intm1 = new int[4.5] { 1, 2, 3, 5 };
-
-float[] intf = new float[4] { 1.1, 2.1, 3.1, 5.1 };
-float[] intf = new float[] { 1.1, 2.1, 3.1, 5.1 };
-float[] intf = { 1.1, 2.1, 3.1, 5.1 };
-intf[3] = intf[3] * 2;
-print(intf);
+int intm[4.5];
+intm = [ 1, 2, 3, 5 ];
+float intf[4];
+intf = [ 1.1, 2.1, 3.1, 5.1 ];
+float intf[];
+float intf;
 
 // Проверка констант
 PI = 3;
-.PI = 3;
-_PI = 3;
-!PI = 3;
-$PI = 3;
-
 Pi = 3;
-.Pi = 3;
-_Pi = 3;
-!Pi = 3;
-$Pi = 3;
-
 int PI = 3;
-int.PI = 3;
 int _PI = 3;
-int !PI = 3;
-int $PI = 3;
-
 int Pi = 3;
-int.Pi = 3;
-int _Pi = 3;
-int !Pi = 3;
-int $Pi = 3;
-
-const int PI = 3;
-const int .PI = 3;
-const int _PI = 3;
-const int !PI = 3;
-const int $PI = 3;
-
-const int Pi = 3;
-const int .Pi = 3;
-const int _Pi = 3;
-const int !Pi = 3;
-const int $Pi = 3;
 
 int MAX_VALUE = 10;
 MAX_VALUE = 30;
@@ -110,10 +80,6 @@ int s3 = 'char';
 float s6 = 'c';
 float s7 = 1;
 
-int[] mass = new int[3] { 1, 3, 5.1 };
-int[] mass = new int[] { 1, 3, 5.1 };
-int[] mass = { 1, 3, 5.1 };
-print(mass);
 
 // Математические операции
 int num_i1 = 1;

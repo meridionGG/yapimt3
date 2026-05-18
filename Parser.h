@@ -13,7 +13,7 @@ enum class Symbol {
     EPS
 };
 
-enum class Action { NONE, DO_ASSIGN, DO_ADD, DO_MUL, DO_REL, DO_AEM };
+enum class Action { NONE, DO_ASSIGN, DO_ADD, DO_MUL, DO_REL, DO_AEM, DO_SAVE_TYPE, DO_DECLARE, DO_CHECK_ASSIGN, DO_DECLARE_ARRAY };
 
 struct StateRow {
     std::vector<Symbol> terminals;
@@ -30,7 +30,7 @@ private:
     std::vector<Token> tokens;
     const ConstTable& reservedWords;
     const ConstTable& delimiters;
-    const VarTable& varTable;
+    VarTable& varTable;
     
     std::vector<StateRow> parseTable;
     std::stack<int> stateStack;
@@ -42,6 +42,6 @@ private:
     std::string symToStr(Symbol s);
 
 public:
-    SyntaxAnalyzer(const std::vector<Token>& tks, const ConstTable& rw, const ConstTable& delims, const VarTable& vt);
+    SyntaxAnalyzer(const std::vector<Token>& tks, const ConstTable& rw, const ConstTable& delims, VarTable& vt);
     std::vector<std::string> parse();
 };

@@ -59,10 +59,10 @@ string SyntaxAnalyzer::symToStr(Symbol s) {
     }
 }
 
-SyntaxAnalyzer::SyntaxAnalyzer(const vector<Token>& tks, const ConstTable& rw, const ConstTable& delims, const VarTable& vt)
+SyntaxAnalyzer::SyntaxAnalyzer(const vector<Token>& tks, const ConstTable& rw, const ConstTable& delims, VarTable& vt)
     : tokens(tks), reservedWords(rw), delimiters(delims), varTable(vt) {
     
-    parseTable.resize(93);
+    parseTable.resize(110);
 
     auto addState = [&](int idx, vector<Symbol> terms, int jump, bool accept, bool stack, bool ret, bool err, Action act = Action::NONE) {
         parseTable[idx] = {terms, jump, accept, stack, ret, err, act};
@@ -91,8 +91,18 @@ SyntaxAnalyzer::SyntaxAnalyzer(const vector<Token>& tks, const ConstTable& rw, c
     addState(11, {Symbol::T_ID}, 12, true, false, false, true);
     addState(12, {}, S_DeclTail, false, true, false, true);
     addState(13, {Symbol::T_SEMI}, 0, true, false, true, true);
-    addState(14, {Symbol::T_ID}, 15, true, false, false, true);
+    addState(14, {Symbol::T_ID}, 93, true, false, false, true);
     addState(15, {Symbol::T_ASSIGN}, 16, true, false, false, true);
+
+    // Extended Assignment for Arrays
+    addState(93, {Symbol::T_ASSIGN}, 16, true, false, false, false); 
+    addState(94, {Symbol::T_LBRACKET}, 95, true, false, false, true); 
+    addState(95, {}, S_Expr, false, true, false, true);
+    addState(96, {Symbol::T_RBRACKET}, 97, true, false, false, true, Action::DO_AEM);
+    addState(97, {Symbol::T_ASSIGN}, 98, true, false, false, true);
+    addState(98, {}, S_Expr, false, true, false, true);
+    addState(99, {}, 18, false, false, false, true, Action::DO_ASSIGN);
+
     addState(16, {}, S_Expr, false, true, false, true);
     addState(17, {}, 18, false, false, false, true, Action::DO_ASSIGN);
     addState(18, {Symbol::T_SEMI}, 0, true, false, true, true);
@@ -176,7 +186,14 @@ SyntaxAnalyzer::SyntaxAnalyzer(const vector<Token>& tks, const ConstTable& rw, c
     addState(74, {Symbol::T_ID}, 77, false, false, false, false);
     addState(75, {Symbol::T_CONST}, 78, false, false, false, false);
     addState(76, {Symbol::T_LBRACKET}, 79, false, false, false, true);
-    addState(77, {Symbol::T_ID}, 0, true, false, true, true);
+    addState(77, {Symbol::T_ID}, 100, true, false, false, true);
+    // Array Indexing in Factor
+    addState(100, {Symbol::T_LBRACKET}, 102, false, false, false, false); // If [, jump to 102
+    addState(101, {}, 0, false, false, true, true); // Else return
+    addState(102, {Symbol::T_LBRACKET}, 103, true, false, false, true); // Consume [
+    addState(103, {}, S_Expr, false, true, false, true); // Parse index
+    addState(104, {Symbol::T_RBRACKET}, 0, true, false, true, true, Action::DO_AEM); // Consume ], return, do AEM
+
     addState(78, {Symbol::T_CONST}, 0, true, false, true, true);
     addState(79, {Symbol::T_LBRACKET}, 80, true, false, false, true);
     addState(80, {}, S_ArrayElems, false, true, false, true);
@@ -206,6 +223,70 @@ vector<string> SyntaxAnalyzer::parse() {
     
     auto getSym = [&](size_t i) { return (i < tokens.size()) ? tokenToSymbol(tokens[i]) : Symbol::T_EOF; };
 
+    // Pre-parse Semantic Analysis
+    for (size_t i = 0; i < tokens.size(); ++i) {
+        Symbol t = tokenToSymbol(tokens[i]);
+        if (t == Symbol::T_INT || t == Symbol::T_FLOAT) {
+            string typeName = symToStr(t);
+            if (i + 1 < tokens.size() && tokenToSymbol(tokens[i+1]) == Symbol::T_ID) {
+                string idName = getTokenString(tokens[i+1]);
+                LexemeAttributes attr = varTable.getAttributes(idName);
+                if (attr.type != "-") {
+                    errOut << "[Line " << tokens[i+1].line << ", Col " << tokens[i+1].col << "] Semantic Error: Redeclaration of variable '" << idName << "'\n";
+                    error = true;
+                } else {
+                    attr.type = typeName;
+                    varTable.update(idName, attr);
+                }
+                
+                // check array declaration
+                if (i + 2 < tokens.size() && tokenToSymbol(tokens[i+2]) == Symbol::T_LBRACKET) {
+                    if (i + 3 < tokens.size() && tokenToSymbol(tokens[i+3]) == Symbol::T_CONST) {
+                        string constVal = getTokenString(tokens[i+3]);
+                        if (constVal.find('.') != string::npos) {
+                            errOut << "[Line " << tokens[i+3].line << ", Col " << tokens[i+3].col << "] Semantic Error: Array size must be an integer\n";
+                            error = true;
+                        } else {
+                            attr.array_size = stoi(constVal);
+                            attr.type = "array<" + typeName + ">";
+                            attr.value = "[]";
+                            varTable.update(idName, attr);
+                        }
+                    }
+                }
+            }
+        } else if (t == Symbol::T_ASSIGN && i > 0 && tokenToSymbol(tokens[i-1]) == Symbol::T_ID) {
+            string idName = getTokenString(tokens[i-1]);
+            LexemeAttributes attr = varTable.getAttributes(idName);
+            if (attr.type == "-") {
+                errOut << "[Line " << tokens[i-1].line << ", Col " << tokens[i-1].col << "] Semantic Error: Assignment to undeclared variable '" << idName << "'\n";
+                error = true;
+            } else if (attr.is_constant) {
+                // If it's a constant, check if it's the first initialization. Wait, our parser allows assignment to named constant?
+                // Let's just say assignment to NAMED_CONSTANT is error.
+                if (tokens[i-1].type == TokenType::NAMED_CONSTANT) {
+                    // find if it's a declaration: if i-2 is T_INT
+                    bool isDecl = (i >= 2 && (tokenToSymbol(tokens[i-2]) == Symbol::T_INT || tokenToSymbol(tokens[i-2]) == Symbol::T_FLOAT));
+                    if (!isDecl) {
+                        errOut << "[Line " << tokens[i-1].line << ", Col " << tokens[i-1].col << "] Semantic Error: Reassignment of named constant '" << idName << "'\n";
+                        error = true;
+                    }
+                }
+            }
+            
+            // type check on RHS for simple case
+            if (i + 1 < tokens.size() && tokenToSymbol(tokens[i+1]) == Symbol::T_CONST) {
+                string rhsVal = getTokenString(tokens[i+1]);
+                bool isFloatRhs = (rhsVal.find('.') != string::npos);
+                if (attr.type == "int" && isFloatRhs) {
+                    errOut << "[Line " << tokens[i+1].line << ", Col " << tokens[i+1].col << "] Semantic Error: Type mismatch, cannot assign float to int\n";
+                    error = true;
+                }
+            }
+        }
+    }
+
+
     while (true) {
         if (currentState <= 0 || currentState >= (int)parseTable.size()) break;
 
@@ -220,14 +301,20 @@ vector<string> SyntaxAnalyzer::parse() {
                 string lineCol = (ip < tokens.size()) ? ("[Line " + to_string(tokens[ip].line) + ", Col " + to_string(tokens[ip].col) + "] ") : "[EOF] ";
                 errOut << lineCol << "Syntax Error: Unexpected token " << symToStr(token) << "\n";
                 
-                while (ip < tokens.size() && token != Symbol::T_SEMI && token != Symbol::T_EOF) {
+                // Panic mode
+                while (ip < tokens.size() && token != Symbol::T_SEMI && token != Symbol::T_EOF && token != Symbol::T_INT && token != Symbol::T_FLOAT) {
                     ip++;
                     token = getSym(ip);
                 }
                 if (token == Symbol::T_SEMI) {
                     ip++;
                     while (!stateStack.empty()) stateStack.pop();
-                    currentState = 3;
+                    currentState = 3; // return to StmtList
+                    continue;
+                } else if (token == Symbol::T_INT || token == Symbol::T_FLOAT) {
+                    // Recovered at the start of a new statement without consuming a semicolon
+                    while (!stateStack.empty()) stateStack.pop();
+                    currentState = 3; // return to StmtList
                     continue;
                 } else {
                     break;
