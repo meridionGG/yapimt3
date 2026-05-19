@@ -1,0 +1,107 @@
+Состояния и переходы (Jumps) в SyntaxAnalyzer:
+================================================
+
+State   1 --[ Symbol::T_INT, Symbol::T_FLOAT, Symbol::T_ID, Symbol::T_EOF       ]--> 2
+State   2 --[ ε (epsilon / empty)                                               ]--> S_StmtList
+State   3 --[ Symbol::T_INT, Symbol::T_FLOAT, Symbol::T_ID                      ]--> 5
+State   4 --[ Symbol::T_EOF                                                     ]--> 7
+State   5 --[ ε (epsilon / empty)                                               ]--> S_Stmt
+State   6 --[ ε (epsilon / empty)                                               ]--> S_StmtList
+State   7 --[ Symbol::T_EOF                                                     ]--> 0
+State   8 --[ Symbol::T_INT, Symbol::T_FLOAT                                    ]--> 10
+State   9 --[ Symbol::T_ID                                                      ]--> 14
+State  10 --[ ε (epsilon / empty)                                               ]--> S_Type
+State  11 --[ Symbol::T_ID                                                      ]--> 12
+State  12 --[ ε (epsilon / empty)                                               ]--> S_DeclTail
+State  13 --[ Symbol::T_SEMI                                                    ]--> 0
+State  14 --[ Symbol::T_ID                                                      ]--> 93
+State  15 --[ Symbol::T_ASSIGN                                                  ]--> 16
+State  93 --[ Symbol::T_ASSIGN                                                  ]--> 16
+State  94 --[ Symbol::T_LBRACKET                                                ]--> 95
+State  95 --[ ε (epsilon / empty)                                               ]--> S_Expr
+State  96 --[ Symbol::T_RBRACKET                                                ]--> 97
+State  97 --[ Symbol::T_ASSIGN                                                  ]--> 98
+State  98 --[ ε (epsilon / empty)                                               ]--> S_Expr
+State  99 --[ ε (epsilon / empty)                                               ]--> 18
+State  16 --[ ε (epsilon / empty)                                               ]--> S_Expr
+State  17 --[ ε (epsilon / empty)                                               ]--> 18
+State  18 --[ Symbol::T_SEMI                                                    ]--> 0
+State  19 --[ Symbol::T_INT                                                     ]--> 21
+State  20 --[ Symbol::T_FLOAT                                                   ]--> 22
+State  21 --[ Symbol::T_INT                                                     ]--> 0
+State  22 --[ Symbol::T_FLOAT                                                   ]--> 0
+State  23 --[ Symbol::T_ASSIGN                                                  ]--> 26
+State  24 --[ Symbol::T_LBRACKET                                                ]--> 29
+State  25 --[ Symbol::T_SEMI                                                    ]--> 32
+State  26 --[ Symbol::T_ASSIGN                                                  ]--> 27
+State  27 --[ ε (epsilon / empty)                                               ]--> S_Expr
+State  28 --[ ε (epsilon / empty)                                               ]--> 0
+State  29 --[ Symbol::T_LBRACKET                                                ]--> 30
+State  30 --[ Symbol::T_CONST                                                   ]--> 31
+State  31 --[ Symbol::T_RBRACKET                                                ]--> 0
+State  32 --[ Symbol::T_SEMI                                                    ]--> 0
+State  33 --[ Symbol::T_ID, Symbol::T_CONST, Symbol::T_LBRACKET                 ]--> 34
+State  34 --[ ε (epsilon / empty)                                               ]--> S_SimpleExpr
+State  35 --[ ε (epsilon / empty)                                               ]--> S_RelOpTail
+State  36 --[ Symbol::T_EQ, Symbol::T_NEQ, Symbol::T_LESS, Symbol::T_GREATER    ]--> 38
+State  37 --[ Symbol::T_SEMI, Symbol::T_RBRACKET, Symbol::T_COMMA               ]--> 41
+State  38 --[ ε (epsilon / empty)                                               ]--> S_RelOp
+State  39 --[ ε (epsilon / empty)                                               ]--> S_SimpleExpr
+State  40 --[ ε (epsilon / empty)                                               ]--> 0
+State  41 --[ Symbol::T_SEMI, Symbol::T_RBRACKET, Symbol::T_COMMA               ]--> 0
+State  42 --[ Symbol::T_EQ                                                      ]--> 46
+State  43 --[ Symbol::T_NEQ                                                     ]--> 47
+State  44 --[ Symbol::T_LESS                                                    ]--> 48
+State  45 --[ Symbol::T_GREATER                                                 ]--> 49
+State  46 --[ Symbol::T_EQ                                                      ]--> 0
+State  47 --[ Symbol::T_NEQ                                                     ]--> 0
+State  48 --[ Symbol::T_LESS                                                    ]--> 0
+State  49 --[ Symbol::T_GREATER                                                 ]--> 0
+State  50 --[ Symbol::T_ID, Symbol::T_CONST, Symbol::T_LBRACKET                 ]--> 51
+State  51 --[ ε (epsilon / empty)                                               ]--> S_Term
+State  52 --[ ε (epsilon / empty)                                               ]--> S_AddOpTail
+State  53 --[ Symbol::T_PLUS, Symbol::T_MINUS                                   ]--> 55
+State  54 --[ Symbol::T_SEMI, Symbol::T_RBRACKET, Symbol::T_COMMA, Symbol::T_EQ, Symbol::T_NEQ, Symbol::T_LESS, Symbol::T_GREATER ]--> 59
+State  55 --[ ε (epsilon / empty)                                               ]--> S_AddOp
+State  56 --[ ε (epsilon / empty)                                               ]--> S_Term
+State  57 --[ ε (epsilon / empty)                                               ]--> 58
+State  58 --[ ε (epsilon / empty)                                               ]--> S_AddOpTail
+State  59 --[ Symbol::T_SEMI, Symbol::T_RBRACKET, Symbol::T_COMMA, Symbol::T_EQ, Symbol::T_NEQ, Symbol::T_LESS, Symbol::T_GREATER ]--> 0
+State  60 --[ Symbol::T_PLUS                                                    ]--> 62
+State  61 --[ Symbol::T_MINUS                                                   ]--> 63
+State  62 --[ Symbol::T_PLUS                                                    ]--> 0
+State  63 --[ Symbol::T_MINUS                                                   ]--> 0
+State  64 --[ Symbol::T_ID, Symbol::T_CONST, Symbol::T_LBRACKET                 ]--> 65
+State  65 --[ ε (epsilon / empty)                                               ]--> S_Factor
+State  66 --[ ε (epsilon / empty)                                               ]--> S_MulOpTail
+State  67 --[ Symbol::T_MUL                                                     ]--> 69
+State  68 --[ Symbol::T_PLUS, Symbol::T_MINUS, Symbol::T_SEMI, Symbol::T_RBRACKET, Symbol::T_COMMA, Symbol::T_EQ, Symbol::T_NEQ, Symbol::T_LESS, Symbol::T_GREATER ]--> 73
+State  69 --[ Symbol::T_MUL                                                     ]--> 70
+State  70 --[ ε (epsilon / empty)                                               ]--> S_Factor
+State  71 --[ ε (epsilon / empty)                                               ]--> 72
+State  72 --[ ε (epsilon / empty)                                               ]--> S_MulOpTail
+State  73 --[ Symbol::T_PLUS, Symbol::T_MINUS, Symbol::T_SEMI, Symbol::T_RBRACKET, Symbol::T_COMMA, Symbol::T_EQ, Symbol::T_NEQ, Symbol::T_LESS, Symbol::T_GREATER ]--> 0
+State  74 --[ Symbol::T_ID                                                      ]--> 77
+State  75 --[ Symbol::T_CONST                                                   ]--> 78
+State  76 --[ Symbol::T_LBRACKET                                                ]--> 79
+State  77 --[ Symbol::T_ID                                                      ]--> 100
+State 100 --[ Symbol::T_LBRACKET                                                ]--> 102
+State 101 --[ ε (epsilon / empty)                                               ]--> 0
+State 102 --[ Symbol::T_LBRACKET                                                ]--> 103
+State 103 --[ ε (epsilon / empty)                                               ]--> S_Expr
+State 104 --[ Symbol::T_RBRACKET                                                ]--> 0
+State  78 --[ Symbol::T_CONST                                                   ]--> 0
+State  79 --[ Symbol::T_LBRACKET                                                ]--> 80
+State  80 --[ ε (epsilon / empty)                                               ]--> S_ArrayElems
+State  81 --[ Symbol::T_RBRACKET                                                ]--> 0
+State  82 --[ Symbol::T_ID, Symbol::T_CONST, Symbol::T_LBRACKET                 ]--> 84
+State  83 --[ Symbol::T_RBRACKET                                                ]--> 86
+State  84 --[ ε (epsilon / empty)                                               ]--> S_Expr
+State  85 --[ ε (epsilon / empty)                                               ]--> S_ArrayElemsTail
+State  86 --[ Symbol::T_RBRACKET                                                ]--> 0
+State  87 --[ Symbol::T_COMMA                                                   ]--> 89
+State  88 --[ Symbol::T_RBRACKET                                                ]--> 92
+State  89 --[ Symbol::T_COMMA                                                   ]--> 90
+State  90 --[ ε (epsilon / empty)                                               ]--> S_Expr
+State  91 --[ ε (epsilon / empty)                                               ]--> S_ArrayElemsTail
+State  92 --[ Symbol::T_RBRACKET                                                ]--> 0

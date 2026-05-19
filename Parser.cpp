@@ -220,6 +220,7 @@ vector<string> SyntaxAnalyzer::parse() {
     size_t ip = 0;
     bool error = false;
     ofstream errOut("output/errors.txt", ios::app);
+    ofstream traceOut("output/trace.txt");
     
     auto getSym = [&](size_t i) { return (i < tokens.size()) ? tokenToSymbol(tokens[i]) : Symbol::T_EOF; };
 
@@ -293,10 +294,13 @@ vector<string> SyntaxAnalyzer::parse() {
         StateRow row = parseTable[currentState];
         Symbol token = getSym(ip);
 
+        traceOut << "State: " << currentState << " | Token: " << symToStr(token);
+
         bool match = row.terminals.empty() || (std::find(row.terminals.begin(), row.terminals.end(), token) != row.terminals.end());
 
         if (!match) {
             if (row.error) {
+                traceOut << " -> Error (Panic Mode)\n";
                 error = true;
                 string lineCol = (ip < tokens.size()) ? ("[Line " + to_string(tokens[ip].line) + ", Col " + to_string(tokens[ip].col) + "] ") : "[EOF] ";
                 errOut << lineCol << "Syntax Error: Unexpected token " << symToStr(token) << "\n";
@@ -320,6 +324,7 @@ vector<string> SyntaxAnalyzer::parse() {
                     break;
                 }
             } else {
+                traceOut << " -> Match failed, trying next state: " << (currentState + 1) << "\n";
                 currentState++;
                 continue;
             }
@@ -349,21 +354,28 @@ vector<string> SyntaxAnalyzer::parse() {
 
         if (row.stack) {
             stateStack.push(currentState + 1);
+            traceOut << " [Push " << (currentState + 1) << " to stack]";
         }
 
         if (row.jump > 0) {
+            traceOut << " -> Jump to: " << row.jump << "\n";
             currentState = row.jump;
             continue;
         }
 
         if (row.return_flag) {
-            if (stateStack.empty()) break;
+            if (stateStack.empty()) {
+                traceOut << " -> Return (Stack empty, halting)\n";
+                break;
+            }
+            traceOut << " -> Return to: " << stateStack.top() << "\n";
             currentState = stateStack.top();
             stateStack.pop();
             continue;
         }
 
         if (row.jump == 0 && !row.return_flag) {
+            traceOut << " -> Next state: " << (currentState + 1) << "\n";
             currentState++;
         }
     }

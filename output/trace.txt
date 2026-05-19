@@ -1,0 +1,1855 @@
+State: 1 | Token: int -> Jump to: 2
+State: 2 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: ; [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: ; -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: int -> Jump to: 67
+State: 67 | Token: int -> Match failed, trying next state: 68
+State: 68 | Token: int -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: const [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: const -> Match failed, trying next state: 24
+State: 24 | Token: const -> Match failed, trying next state: 25
+State: 25 | Token: const -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: , [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: , -> Match failed, trying next state: 24
+State: 24 | Token: , -> Match failed, trying next state: 25
+State: 25 | Token: , -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: const -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: float -> Jump to: 3
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: , [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: , -> Match failed, trying next state: 24
+State: 24 | Token: , -> Match failed, trying next state: 25
+State: 25 | Token: , -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: const -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: [ [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: [ -> Match failed, trying next state: 24
+State: 24 | Token: [ -> Jump to: 29
+State: 29 | Token: [ -> Jump to: 30
+State: 30 | Token: const -> Jump to: 31
+State: 31 | Token: ] -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: id -> Jump to: 3
+State: 3 | Token: id -> Jump to: 5
+State: 5 | Token: id [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: id -> Match failed, trying next state: 9
+State: 9 | Token: id -> Jump to: 14
+State: 14 | Token: id -> Jump to: 93
+State: 93 | Token: = -> Jump to: 16
+State: 16 | Token: [ [Push 17 to stack] -> Jump to: 33
+State: 33 | Token: [ -> Jump to: 34
+State: 34 | Token: [ [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: [ -> Jump to: 51
+State: 51 | Token: [ [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: [ -> Jump to: 65
+State: 65 | Token: [ [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: [ -> Match failed, trying next state: 75
+State: 75 | Token: [ -> Match failed, trying next state: 76
+State: 76 | Token: [ -> Jump to: 79
+State: 79 | Token: [ -> Jump to: 80
+State: 80 | Token: const [Push 81 to stack] -> Jump to: 82
+State: 82 | Token: const -> Jump to: 84
+State: 84 | Token: const [Push 85 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 85
+State: 85 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 91
+State: 91 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 91
+State: 91 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ] -> Jump to: 67
+State: 67 | Token: ] -> Match failed, trying next state: 68
+State: 68 | Token: ] -> Jump to: 73
+State: 73 | Token: ] -> Return to: 52
+State: 52 | Token: ] -> Jump to: 53
+State: 53 | Token: ] -> Match failed, trying next state: 54
+State: 54 | Token: ] -> Jump to: 59
+State: 59 | Token: ] -> Return to: 35
+State: 35 | Token: ] -> Jump to: 36
+State: 36 | Token: ] -> Match failed, trying next state: 37
+State: 37 | Token: ] -> Jump to: 41
+State: 41 | Token: ] -> Return to: 91
+State: 91 | Token: ] -> Jump to: 87
+State: 87 | Token: ] -> Match failed, trying next state: 88
+State: 88 | Token: ] -> Jump to: 92
+State: 92 | Token: ] -> Return to: 81
+State: 81 | Token: ] -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 17
+State: 17 | Token: ; -> Jump to: 18
+State: 18 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: [ [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: [ -> Match failed, trying next state: 24
+State: 24 | Token: [ -> Jump to: 29
+State: 29 | Token: [ -> Jump to: 30
+State: 30 | Token: ] -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: ; [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: ; -> Match failed, trying next state: 24
+State: 24 | Token: ; -> Match failed, trying next state: 25
+State: 25 | Token: ; -> Jump to: 32
+State: 32 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: id -> Jump to: 3
+State: 3 | Token: id -> Jump to: 5
+State: 5 | Token: id [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: id -> Match failed, trying next state: 9
+State: 9 | Token: id -> Jump to: 14
+State: 14 | Token: id -> Jump to: 93
+State: 93 | Token: [ -> Match failed, trying next state: 94
+State: 94 | Token: [ -> Jump to: 95
+State: 95 | Token: const [Push 96 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ] -> Jump to: 67
+State: 67 | Token: ] -> Match failed, trying next state: 68
+State: 68 | Token: ] -> Jump to: 73
+State: 73 | Token: ] -> Return to: 52
+State: 52 | Token: ] -> Jump to: 53
+State: 53 | Token: ] -> Match failed, trying next state: 54
+State: 54 | Token: ] -> Jump to: 59
+State: 59 | Token: ] -> Return to: 35
+State: 35 | Token: ] -> Jump to: 36
+State: 36 | Token: ] -> Match failed, trying next state: 37
+State: 37 | Token: ] -> Jump to: 41
+State: 41 | Token: ] -> Return to: 96
+State: 96 | Token: ] -> Jump to: 97
+State: 97 | Token: = -> Jump to: 98
+State: 98 | Token: id [Push 99 to stack] -> Jump to: 33
+State: 33 | Token: id -> Jump to: 34
+State: 34 | Token: id [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: id -> Jump to: 51
+State: 51 | Token: id [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: [ -> Jump to: 102
+State: 102 | Token: [ -> Jump to: 103
+State: 103 | Token: const [Push 104 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ] -> Jump to: 67
+State: 67 | Token: ] -> Match failed, trying next state: 68
+State: 68 | Token: ] -> Jump to: 73
+State: 73 | Token: ] -> Return to: 52
+State: 52 | Token: ] -> Jump to: 53
+State: 53 | Token: ] -> Match failed, trying next state: 54
+State: 54 | Token: ] -> Jump to: 59
+State: 59 | Token: ] -> Return to: 35
+State: 35 | Token: ] -> Jump to: 36
+State: 36 | Token: ] -> Match failed, trying next state: 37
+State: 37 | Token: ] -> Jump to: 41
+State: 41 | Token: ] -> Return to: 104
+State: 104 | Token: ] -> Return to: 66
+State: 66 | Token: + -> Jump to: 67
+State: 67 | Token: + -> Match failed, trying next state: 68
+State: 68 | Token: + -> Jump to: 73
+State: 73 | Token: + -> Return to: 52
+State: 52 | Token: + -> Jump to: 53
+State: 53 | Token: + -> Jump to: 55
+State: 55 | Token: + [Push 56 to stack] -> Jump to: 60
+State: 60 | Token: + -> Jump to: 62
+State: 62 | Token: + -> Return to: 56
+State: 56 | Token: const [Push 57 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 57
+State: 57 | Token: ; -> Jump to: 58
+State: 58 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 99
+State: 99 | Token: ; -> Jump to: 18
+State: 18 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: [ [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: [ -> Match failed, trying next state: 24
+State: 24 | Token: [ -> Jump to: 29
+State: 29 | Token: [ -> Jump to: 30
+State: 30 | Token: const -> Jump to: 31
+State: 31 | Token: ] -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: id -> Jump to: 3
+State: 3 | Token: id -> Jump to: 5
+State: 5 | Token: id [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: id -> Match failed, trying next state: 9
+State: 9 | Token: id -> Jump to: 14
+State: 14 | Token: id -> Jump to: 93
+State: 93 | Token: = -> Jump to: 16
+State: 16 | Token: [ [Push 17 to stack] -> Jump to: 33
+State: 33 | Token: [ -> Jump to: 34
+State: 34 | Token: [ [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: [ -> Jump to: 51
+State: 51 | Token: [ [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: [ -> Jump to: 65
+State: 65 | Token: [ [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: [ -> Match failed, trying next state: 75
+State: 75 | Token: [ -> Match failed, trying next state: 76
+State: 76 | Token: [ -> Jump to: 79
+State: 79 | Token: [ -> Jump to: 80
+State: 80 | Token: const [Push 81 to stack] -> Jump to: 82
+State: 82 | Token: const -> Jump to: 84
+State: 84 | Token: const [Push 85 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 85
+State: 85 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 91
+State: 91 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 91
+State: 91 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ] -> Jump to: 67
+State: 67 | Token: ] -> Match failed, trying next state: 68
+State: 68 | Token: ] -> Jump to: 73
+State: 73 | Token: ] -> Return to: 52
+State: 52 | Token: ] -> Jump to: 53
+State: 53 | Token: ] -> Match failed, trying next state: 54
+State: 54 | Token: ] -> Jump to: 59
+State: 59 | Token: ] -> Return to: 35
+State: 35 | Token: ] -> Jump to: 36
+State: 36 | Token: ] -> Match failed, trying next state: 37
+State: 37 | Token: ] -> Jump to: 41
+State: 41 | Token: ] -> Return to: 91
+State: 91 | Token: ] -> Jump to: 87
+State: 87 | Token: ] -> Match failed, trying next state: 88
+State: 88 | Token: ] -> Jump to: 92
+State: 92 | Token: ] -> Return to: 81
+State: 81 | Token: ] -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 17
+State: 17 | Token: ; -> Jump to: 18
+State: 18 | Token: ; -> Return to: 6
+State: 6 | Token: float -> Jump to: 3
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: [ [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: [ -> Match failed, trying next state: 24
+State: 24 | Token: [ -> Jump to: 29
+State: 29 | Token: [ -> Jump to: 30
+State: 30 | Token: const -> Jump to: 31
+State: 31 | Token: ] -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: id -> Jump to: 3
+State: 3 | Token: id -> Jump to: 5
+State: 5 | Token: id [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: id -> Match failed, trying next state: 9
+State: 9 | Token: id -> Jump to: 14
+State: 14 | Token: id -> Jump to: 93
+State: 93 | Token: = -> Jump to: 16
+State: 16 | Token: [ [Push 17 to stack] -> Jump to: 33
+State: 33 | Token: [ -> Jump to: 34
+State: 34 | Token: [ [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: [ -> Jump to: 51
+State: 51 | Token: [ [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: [ -> Jump to: 65
+State: 65 | Token: [ [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: [ -> Match failed, trying next state: 75
+State: 75 | Token: [ -> Match failed, trying next state: 76
+State: 76 | Token: [ -> Jump to: 79
+State: 79 | Token: [ -> Jump to: 80
+State: 80 | Token: const [Push 81 to stack] -> Jump to: 82
+State: 82 | Token: const -> Jump to: 84
+State: 84 | Token: const [Push 85 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 85
+State: 85 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 91
+State: 91 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: , -> Jump to: 67
+State: 67 | Token: , -> Match failed, trying next state: 68
+State: 68 | Token: , -> Jump to: 73
+State: 73 | Token: , -> Return to: 52
+State: 52 | Token: , -> Jump to: 53
+State: 53 | Token: , -> Match failed, trying next state: 54
+State: 54 | Token: , -> Jump to: 59
+State: 59 | Token: , -> Return to: 35
+State: 35 | Token: , -> Jump to: 36
+State: 36 | Token: , -> Match failed, trying next state: 37
+State: 37 | Token: , -> Jump to: 41
+State: 41 | Token: , -> Return to: 91
+State: 91 | Token: , -> Jump to: 87
+State: 87 | Token: , -> Jump to: 89
+State: 89 | Token: , -> Jump to: 90
+State: 90 | Token: const [Push 91 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ] -> Jump to: 67
+State: 67 | Token: ] -> Match failed, trying next state: 68
+State: 68 | Token: ] -> Jump to: 73
+State: 73 | Token: ] -> Return to: 52
+State: 52 | Token: ] -> Jump to: 53
+State: 53 | Token: ] -> Match failed, trying next state: 54
+State: 54 | Token: ] -> Jump to: 59
+State: 59 | Token: ] -> Return to: 35
+State: 35 | Token: ] -> Jump to: 36
+State: 36 | Token: ] -> Match failed, trying next state: 37
+State: 37 | Token: ] -> Jump to: 41
+State: 41 | Token: ] -> Return to: 91
+State: 91 | Token: ] -> Jump to: 87
+State: 87 | Token: ] -> Match failed, trying next state: 88
+State: 88 | Token: ] -> Jump to: 92
+State: 92 | Token: ] -> Return to: 81
+State: 81 | Token: ] -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 17
+State: 17 | Token: ; -> Jump to: 18
+State: 18 | Token: ; -> Return to: 6
+State: 6 | Token: float -> Jump to: 3
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: [ [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: [ -> Match failed, trying next state: 24
+State: 24 | Token: [ -> Jump to: 29
+State: 29 | Token: [ -> Jump to: 30
+State: 30 | Token: ] -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: ; [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: ; -> Match failed, trying next state: 24
+State: 24 | Token: ; -> Match failed, trying next state: 25
+State: 25 | Token: ; -> Jump to: 32
+State: 32 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: id -> Jump to: 3
+State: 3 | Token: id -> Jump to: 5
+State: 5 | Token: id [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: id -> Match failed, trying next state: 9
+State: 9 | Token: id -> Jump to: 14
+State: 14 | Token: id -> Jump to: 93
+State: 93 | Token: = -> Jump to: 16
+State: 16 | Token: const [Push 17 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 17
+State: 17 | Token: ; -> Jump to: 18
+State: 18 | Token: ; -> Return to: 6
+State: 6 | Token: id -> Jump to: 3
+State: 3 | Token: id -> Jump to: 5
+State: 5 | Token: id [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: id -> Match failed, trying next state: 9
+State: 9 | Token: id -> Jump to: 14
+State: 14 | Token: id -> Jump to: 93
+State: 93 | Token: = -> Jump to: 16
+State: 16 | Token: const [Push 17 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 17
+State: 17 | Token: ; -> Jump to: 18
+State: 18 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: id -> Jump to: 3
+State: 3 | Token: id -> Jump to: 5
+State: 5 | Token: id [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: id -> Match failed, trying next state: 9
+State: 9 | Token: id -> Jump to: 14
+State: 14 | Token: id -> Jump to: 93
+State: 93 | Token: = -> Jump to: 16
+State: 16 | Token: const [Push 17 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 17
+State: 17 | Token: ; -> Jump to: 18
+State: 18 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: int -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: float -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: = -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: ; [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: ; -> Error (Panic Mode)
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: ; [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: ; -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: ; [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: ; -> Error (Panic Mode)
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: float -> Jump to: 3
+State: 3 | Token: float -> Jump to: 5
+State: 5 | Token: float [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: float -> Jump to: 10
+State: 10 | Token: float [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: float -> Match failed, trying next state: 20
+State: 20 | Token: float -> Jump to: 22
+State: 22 | Token: float -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: const [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: const -> Jump to: 34
+State: 34 | Token: const [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: const -> Jump to: 51
+State: 51 | Token: const [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: const -> Jump to: 65
+State: 65 | Token: const [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: const -> Match failed, trying next state: 75
+State: 75 | Token: const -> Jump to: 78
+State: 78 | Token: const -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: id [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: id -> Jump to: 34
+State: 34 | Token: id [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: id -> Jump to: 51
+State: 51 | Token: id [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: + -> Match failed, trying next state: 101
+State: 101 | Token: + -> Return to: 66
+State: 66 | Token: + -> Jump to: 67
+State: 67 | Token: + -> Match failed, trying next state: 68
+State: 68 | Token: + -> Jump to: 73
+State: 73 | Token: + -> Return to: 52
+State: 52 | Token: + -> Jump to: 53
+State: 53 | Token: + -> Jump to: 55
+State: 55 | Token: + [Push 56 to stack] -> Jump to: 60
+State: 60 | Token: + -> Jump to: 62
+State: 62 | Token: + -> Return to: 56
+State: 56 | Token: id [Push 57 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: ; -> Match failed, trying next state: 101
+State: 101 | Token: ; -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 57
+State: 57 | Token: ; -> Jump to: 58
+State: 58 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: id [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: id -> Jump to: 34
+State: 34 | Token: id [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: id -> Jump to: 51
+State: 51 | Token: id [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: - -> Match failed, trying next state: 101
+State: 101 | Token: - -> Return to: 66
+State: 66 | Token: - -> Jump to: 67
+State: 67 | Token: - -> Match failed, trying next state: 68
+State: 68 | Token: - -> Jump to: 73
+State: 73 | Token: - -> Return to: 52
+State: 52 | Token: - -> Jump to: 53
+State: 53 | Token: - -> Jump to: 55
+State: 55 | Token: - [Push 56 to stack] -> Jump to: 60
+State: 60 | Token: - -> Match failed, trying next state: 61
+State: 61 | Token: - -> Jump to: 63
+State: 63 | Token: - -> Return to: 56
+State: 56 | Token: id [Push 57 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: ; -> Match failed, trying next state: 101
+State: 101 | Token: ; -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 57
+State: 57 | Token: ; -> Jump to: 58
+State: 58 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: id [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: id -> Jump to: 34
+State: 34 | Token: id [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: id -> Jump to: 51
+State: 51 | Token: id [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: * -> Match failed, trying next state: 101
+State: 101 | Token: * -> Return to: 66
+State: 66 | Token: * -> Jump to: 67
+State: 67 | Token: * -> Jump to: 69
+State: 69 | Token: * -> Jump to: 70
+State: 70 | Token: id [Push 71 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: ; -> Match failed, trying next state: 101
+State: 101 | Token: ; -> Return to: 71
+State: 71 | Token: ; -> Jump to: 72
+State: 72 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: id [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: id -> Jump to: 34
+State: 34 | Token: id [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: id -> Jump to: 51
+State: 51 | Token: id [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: + -> Match failed, trying next state: 101
+State: 101 | Token: + -> Return to: 66
+State: 66 | Token: + -> Jump to: 67
+State: 67 | Token: + -> Match failed, trying next state: 68
+State: 68 | Token: + -> Jump to: 73
+State: 73 | Token: + -> Return to: 52
+State: 52 | Token: + -> Jump to: 53
+State: 53 | Token: + -> Jump to: 55
+State: 55 | Token: + [Push 56 to stack] -> Jump to: 60
+State: 60 | Token: + -> Jump to: 62
+State: 62 | Token: + -> Return to: 56
+State: 56 | Token: id [Push 57 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: ; -> Match failed, trying next state: 101
+State: 101 | Token: ; -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 57
+State: 57 | Token: ; -> Jump to: 58
+State: 58 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: id [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: id -> Jump to: 34
+State: 34 | Token: id [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: id -> Jump to: 51
+State: 51 | Token: id [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: - -> Match failed, trying next state: 101
+State: 101 | Token: - -> Return to: 66
+State: 66 | Token: - -> Jump to: 67
+State: 67 | Token: - -> Match failed, trying next state: 68
+State: 68 | Token: - -> Jump to: 73
+State: 73 | Token: - -> Return to: 52
+State: 52 | Token: - -> Jump to: 53
+State: 53 | Token: - -> Jump to: 55
+State: 55 | Token: - [Push 56 to stack] -> Jump to: 60
+State: 60 | Token: - -> Match failed, trying next state: 61
+State: 61 | Token: - -> Jump to: 63
+State: 63 | Token: - -> Return to: 56
+State: 56 | Token: id [Push 57 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: ; -> Match failed, trying next state: 101
+State: 101 | Token: ; -> Return to: 66
+State: 66 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 57
+State: 57 | Token: ; -> Jump to: 58
+State: 58 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: int -> Jump to: 3
+State: 3 | Token: int -> Jump to: 5
+State: 5 | Token: int [Push 6 to stack] -> Jump to: 8
+State: 8 | Token: int -> Jump to: 10
+State: 10 | Token: int [Push 11 to stack] -> Jump to: 19
+State: 19 | Token: int -> Jump to: 21
+State: 21 | Token: int -> Return to: 11
+State: 11 | Token: id -> Jump to: 12
+State: 12 | Token: = [Push 13 to stack] -> Jump to: 23
+State: 23 | Token: = -> Jump to: 26
+State: 26 | Token: = -> Jump to: 27
+State: 27 | Token: id [Push 28 to stack] -> Jump to: 33
+State: 33 | Token: id -> Jump to: 34
+State: 34 | Token: id [Push 35 to stack] -> Jump to: 50
+State: 50 | Token: id -> Jump to: 51
+State: 51 | Token: id [Push 52 to stack] -> Jump to: 64
+State: 64 | Token: id -> Jump to: 65
+State: 65 | Token: id [Push 66 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: * -> Match failed, trying next state: 101
+State: 101 | Token: * -> Return to: 66
+State: 66 | Token: * -> Jump to: 67
+State: 67 | Token: * -> Jump to: 69
+State: 69 | Token: * -> Jump to: 70
+State: 70 | Token: id [Push 71 to stack] -> Jump to: 74
+State: 74 | Token: id -> Jump to: 77
+State: 77 | Token: id -> Jump to: 100
+State: 100 | Token: ; -> Match failed, trying next state: 101
+State: 101 | Token: ; -> Return to: 71
+State: 71 | Token: ; -> Jump to: 72
+State: 72 | Token: ; -> Jump to: 67
+State: 67 | Token: ; -> Match failed, trying next state: 68
+State: 68 | Token: ; -> Jump to: 73
+State: 73 | Token: ; -> Return to: 52
+State: 52 | Token: ; -> Jump to: 53
+State: 53 | Token: ; -> Match failed, trying next state: 54
+State: 54 | Token: ; -> Jump to: 59
+State: 59 | Token: ; -> Return to: 35
+State: 35 | Token: ; -> Jump to: 36
+State: 36 | Token: ; -> Match failed, trying next state: 37
+State: 37 | Token: ; -> Jump to: 41
+State: 41 | Token: ; -> Return to: 28
+State: 28 | Token: ; -> Return to: 13
+State: 13 | Token: ; -> Return to: 6
+State: 6 | Token: != -> Jump to: 3
+State: 3 | Token: != -> Match failed, trying next state: 4
+State: 4 | Token: != -> Error (Panic Mode)

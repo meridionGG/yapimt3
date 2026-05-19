@@ -21,9 +21,6 @@ install_manifest.txt
 *.dll
 Lab3
 
-# Выходные файлы запуска программы (если их не нужно отслеживать)
-tokens.txt
-variables.txt
 
 # Настройки сред разработки (IDE)
 .vscode/
