@@ -1,6 +1,6 @@
 #pragma once
-#include "LexerTypes.h"
-#include "Tables.h"
+#include "lexertypes.h"
+#include "tables.h"
 #include <string>
 #include <vector>
 

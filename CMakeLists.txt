@@ -9,12 +9,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # Добавление исполняемого файла
 add_executable(Lab3 
     main.cpp
-    LexerTypes.cpp
-    Utils.cpp
-    Tables.cpp
-    Lexer.cpp
-    Parser.cpp
-    Interpreter.cpp
+    lexertypes.cpp
+    utils.cpp
+    tables.cpp
+    lexer.cpp
+    parser.cpp
+    interpreter.cpp
 )
 
 # Настройка предупреждений компилятора

@@ -1,4 +1,4 @@
-#include "LexerTypes.h"
+#include "lexertypes.h"
 #include <sstream>
 
 void LexemeAttributes::updateArrayData() {

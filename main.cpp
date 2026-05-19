@@ -1,9 +1,9 @@
-#include "LexerTypes.h"
-#include "Utils.h"
-#include "Tables.h"
-#include "Lexer.h"
-#include "Parser.h"
-#include "Interpreter.h"
+#include "lexertypes.h"
+#include "utils.h"
+#include "tables.h"
+#include "lexer.h"
+#include "parser.h"
+#include "interpreter.h"
 
 #include <iostream>
 #include <fstream>

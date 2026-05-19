@@ -1,5 +1,5 @@
 #pragma once
-#include "LexerTypes.h"
+#include "lexertypes.h"
 #include <set>
 #include <vector>
 #include <string>

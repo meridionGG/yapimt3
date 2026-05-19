@@ -1,4 +1,4 @@
-#include "Interpreter.h"
+#include "interpreter.h"
 #include <iostream>
 #include <stack>
 #include <stdexcept>

@@ -1,5 +1,5 @@
-#include "Tables.h"
-#include "Utils.h"
+#include "tables.h"
+#include "utils.h"
 #include <fstream>
 #include <iostream>
 #include <stdexcept>
